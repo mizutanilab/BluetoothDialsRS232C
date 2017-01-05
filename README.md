@@ -1,4 +1,4 @@
-# Bluetooth-dials
+# Bluetooth Dials
 Dial input device with Bluetooth interface
 
 [We took device picutures. It will be posted here soon]<br>
