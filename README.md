@@ -1,9 +1,7 @@
 # Bluetooth Dials
-Dial input device with a Bluetooth interface
 
-[Device picutures will be posted here soon]<br>
 
-This is a wireless input device for manipulating multiple parameters, such as viewing directions, positions, contrast, frames, magnification, and so on. It has dials and buttons and communicate through a Bluetooth interface with the host PC or WS. In 1990's, dial/button boxes were commercially available from graphics WS manufacturers, but today we can't find such devices. So we made it by ourselves. This device is compatible with RecView and MCTrace softwares. It's very useful.<br>
+"Bluetooth Dials" is a wireless input device for manipulating multiple parameters, such as viewing directions, positions, contrast, frames, magnification, and so on. It has dials and buttons and communicate through a Bluetooth interface with the host PC or WS. In 1990's, dial/button boxes were commercially available from graphics WS manufacturers, but today we can't find such devices. So we made it by ourselves. This device is compatible with RecView and MCTrace softwares. It's very useful.<br>
 
 The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button actions are sent to a virtual COM port associated with the Bluetooth interface of this device. The keyboard mode can be selected by pressing a button while setting batteries or connecting the power supply if no batteries. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button actions are treated as if they are inputs from keyboard. 
 
