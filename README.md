@@ -6,7 +6,7 @@
 
 Six knobs are used for manipulating parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED is on when connected, and blinks when standby.  
 
-The Bluetooth interface of this device is Microchip (Roving Networks) RN42. As the host-side Bluetooth interface, we use Bluetooth dongles MM-BTUD43 (Sanwa Supply) with Windows Vista, 7, and 10 PCs. This dongle seems to use CSR chips. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.   
+The Bluetooth interface of this device is Microchip (Roving Networks) RN42. For the host-side Bluetooth interface, we use Bluetooth dongles MM-BTUD43 (Sanwa Supply) with Windows Vista, 7, and 10 PCs. This dongle seems to use CSR chips. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.   
 
 # Firmware
 The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button manipulations are sent to a virtual COM port associated with the Bluetooth interface of this device. The keyboard mode can be selected by pressing the black button while setting batteries or connecting the power cable. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button manipulations are treated as if they are keyboard inputs.  
