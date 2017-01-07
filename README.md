@@ -10,6 +10,7 @@ The Bluetooth interface of this device is Microchip (Roving Networks) RN42. For 
 
 # Firmware
 The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button manipulations are sent to a virtual COM port associated with the Bluetooth interface of this device. The keyboard mode can be selected by pressing the black button while setting batteries or connecting the power cable. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button manipulations are treated as if they are keyboard inputs.  
+
 In the serial mode, Bluetooth sniffing with a 500 ms interval is enabled (RN42 command: SW,0320) to reduce the battery consumption, but a certain laptop interface seems not compatible with this sniffing. In the keyboard mode, sniffing is disabled because it's frustrating.  
 
 # Schematic
