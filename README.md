@@ -4,7 +4,7 @@
 
 "Bluetooth Dials" is a wireless input device for manipulating multiple parameters, such as viewing directions, positions, image contrast, proceeding/reversing movie frames, zooming in/out, and so on. It has dials and buttons and sends your manipulation through its Bluetooth interface to your host PC or WS. In 1990's, dial/button boxes were commercially available from graphics WS manufacturers, but today we couldn't find such devices. The most similar one is Microsoft Surface Dial, but it has only one dial and does not meet our purpose. Bluetooth Dials is a wireless version of the historic dial/button box. It's compatible with our <a href="https://github.com/mizutanilab/RecView">RecView</a> and <a href="https://github.com/mizutanilab/MCTrace">MCTrace</a> softwares.<br>
 
-Six knobs are used for manipulating parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED is turned on when connected, and blinks when standby.  
+Six knobs are used for manipulating parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED is on when connected, and blinks when standby.  
 
 The Bluetooth interface of this device is Microchip (Roving Networks) RN42. As the host-side Bluetooth interface, we use Bluetooth dongles MM-BTUD43 (Sanwa Supply) with Windows Vista, 7, and 10 PCs. This dongle seems to use CSR chips. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.   
 
