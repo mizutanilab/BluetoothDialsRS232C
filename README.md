@@ -24,7 +24,7 @@ The device encodes dial/button manipulations into ASCII characters Z/X (CCW/CW o
 
 If you use this device in the serial mode, dedicated host side coding is necessary, but its response is faster, while the current consumption is rather low.  
 
-You can find a C++ code example in files DlgDialbox.cpp and MainFrm.cpp of <a href="https://github.com/mizutanilab/RecView">RecView</a>.
+You can find a C++ code example in files <a href="https://github.com/mizutanilab/RecView/blob/master/source/DlgDialbox.cpp">DlgDialbox.cpp</a> and <a href="https://github.com/mizutanilab/RecView/blob/master/source/MainFrm.cpp">MainFrm.cpp</a> of <a href="https://github.com/mizutanilab/RecView">RecView</a>.
 
 ## Tips
 Rubber bumpons on the device back are essential.
