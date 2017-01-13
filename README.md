@@ -6,10 +6,10 @@
 
 Six knobs are used for manipulating parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED indicates the Bluetooth connection, and blinks when standby.  
 
-The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows Vista, 7, and 10 PCs. This dongle seems to use CSR chips. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.  
+The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows Vista, 7, and 10 PCs. This dongle seems to use a CSR chip. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.  
 
 ## Firmware
-The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button manipulations are sent to a virtual COM port associated with this device. The device port is scanned and listed automatically in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
+The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button manipulations are sent to a virtual COM port associated with this device. If the device is paired with your PC, the device port is scanned and listed automatically in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
 
 The keyboard mode is enabled by pressing the black button while setting batteries or connecting a power cable. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button manipulations are treated as if they are keyboard inputs.  
 
@@ -17,7 +17,7 @@ In the serial mode, Bluetooth sniffing with a 500 ms interval is enabled (RN42 c
 
 ## Schematic
 <IMG alt=schematic src="pics/schematic170107.png"><BR>
-There's nothing special. The MCU (PIC16F1828) receives signals from rotary encoders (PEC11R, Bourns) and push buttons, and sends those information through the UART TX line to the Bluetooth module (RN42XV). The device operates with four AA batteries, or with an external DC supply (4 - 16 V, 50 mA). If you prefer wired connection to your PC, the UART output can be directly sent to a serial (RS232C) port. Or you may choose a MCU with a USB interface or use an external UART-USB interface chip, such as FT232 or CP210x, to connect the device to a USB port. <BR>
+There's nothing special. The MCU (PIC16F1828) receives signals from rotary encoders (PEC11R, Bourns) and push buttons, and sends those information through the UART TX line to the Bluetooth module (RN42XV). The device operates with four AA batteries, or with an external DC supply (4 - 16 V, 50 mA). If you prefer wired connection to your PC, the UART output can be directly sent to a serial (RS232C) port. Or you may choose a MCU with a USB interface or use a UART-USB interface chip, such as FT23x or CP210x, to connect the device to a USB port. <BR>
 
 ## Host side coding
 The device encodes dial/button manipulations into ASCII characters Z/X (CCW/CW of the lower left dial), A/S (middle left), Q/W (upper left), C/V (lower right), D/F (middle right), E/R (upper right), G (lower button), and T (upper button) and transmits them through the Bluetooth interface. In the keyboard mode, these characters come through as keyboard inputs, so they can be used as accelerator keys. By associating these characters with target routines, software functions are invoked by the dial/button manipulations. <BR>
