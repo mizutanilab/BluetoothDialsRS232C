@@ -31,5 +31,5 @@ Rubber bumpons on the device back are essential. Without these bumpons, the devi
 <IMG alt=overall src="pics/rubberBumpons.png"><BR>
 
 ## Variations
-A portable model with a battery charging circuit. Its size is about 95 x 65 x 23 mm. This model is equipped with wood knobs (we purchased them as guitar knobs) to improve the usability. Bluetooth sniffing is disabled in this model because some laptop PCs seem incompatible with sniffing.  
+A portable model with a battery charging circuit. Its size is about 95 x 65 x 35 mm. This model is equipped with wood knobs (we purchased them as guitar knobs) to improve the usability. Bluetooth sniffing is disabled in this model because some laptop PCs seem incompatible with sniffing.  
 <IMG alt=overall src="pics/portableModel.png"><BR>
