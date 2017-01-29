@@ -2,9 +2,9 @@
 
 <IMG alt=overall src="pics/overall.png"><BR>
 
-"Bluetooth Dials" is a wireless input device for operating multiple parameters, such as viewing directions, x/y/z positions, image contrast, zooming in/out, moving movie frames forward/backward, and so on. It has dials and buttons and sends your operation through its Bluetooth interface to your PC or WS. In 1990's, dial/button boxes were commercially available from graphics WS manufacturers, but today we can't find such devices. The most similar one is Microsoft Surface Dial, but it has only one dial and does not meet our needs. Bluetooth Dials is a wireless version of the historic dial/button box. It's compatible with our <a href="https://github.com/mizutanilab/RecView">RecView</a> and <a href="https://github.com/mizutanilab/MCTrace">MCTrace</a> softwares. We usually use a mouse with the right hand and this device with the left hand to speed up our research.<br>
+"Bluetooth Dials" is a wireless input device for operating multiple parameters, such as viewing directions, x/y/z positions, image contrast, zooming in/out, moving movie frames forward/backward, and so on. It has dials and buttons and sends your operation through its Bluetooth interface to your PC or WS. In 1990's, dial/button boxes were commercially available from graphics WS manufacturers, but today we can't find such devices. The most similar one is Microsoft Surface Dial, but it has only one dial and does not meet our needs. Bluetooth Dials is a wireless version of the historic dial/button box. It's compatible with our <a href="https://github.com/mizutanilab/RecView">RecView</a> and <a href="https://github.com/mizutanilab/MCTrace">MCTrace</a> softwares. We usually use a mouse with the right hand and this device with the left hand to accelerate our research.<br>
 
-Six knobs are used for operating parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED indicates the Bluetooth connection, and blinks when standby.  
+Six knobs are used for tuning parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED indicates the Bluetooth connection, and blinks when standby.  
 
 The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows Vista, 7, and 10 PCs. This dongle seems to use a CSR chip. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.  
 
@@ -13,7 +13,7 @@ The device firmware runs in two modes: serial mode and keyboard mode. The serial
 
 The keyboard mode is enabled by pressing the black button while setting batteries or connecting power cable. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button operations are treated as if they are keyboard inputs.  
 
-In the serial mode, Bluetooth sniffing with a 500 ms interval is enabled (RN42 command: SW,0320) to reduce the battery consumption, but a certain laptop seems not compatible with this sniffing. In the keyboard mode, sniffing is disabled because the device reaction becomes frustrating.  
+In the serial mode, Bluetooth sniffing with a 500 ms interval is enabled (RN42 command: SW,0320) to reduce the battery consumption, but a certain laptop seems not compatible with the sniffing. In the keyboard mode, sniffing is disabled because the device reaction becomes frustrating.  
 
 ## Schematic
 <IMG alt=schematic src="pics/schematic170107.png"><BR>
