@@ -6,7 +6,7 @@ Bluetooth Dials is a wireless input device for operating multiple parameters wit
 
 Six knobs are used for tuning parameters. Two buttons are used for toggling some functions. The upper black button is also used for turning on and off the device. The green LED indicates the Bluetooth connection, and blinks when standby.  
 
-The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows 7 and 10 PCs. This dongle seems to use a CSR chip. Built-in Bluetooth interfaces of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.  
+The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows 7 and 10 PCs. This dongle seems to use a CSR chip. Built-in Bluetooth interfaces of most of our laptop PCs also work well with the device. We have no information about what kind of chips are implemented in our laptops.  
 
 ## Firmware
 The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button operations are sent to a virtual COM port associated with this device. If the device is paired with your PC, the device port is scanned and listed automatically in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
@@ -31,7 +31,7 @@ Rubber bumpons on the device back are essential. Without these bumpons, the devi
 <IMG alt=overall src="pics/rubberBumpons.png"><BR>
 
 ## Variations
-A portable model with a battery charging circuit. Its size is about 95 x 65 x 35 mm. This model is equipped with wood knobs (we purchased them as guitar knobs) to improve the usability.   
+A portable model with a battery charging circuit. Its size is about 95 x 65 x 35 mm. Wood knobs are for the better usability. We purchased them as guitar knobs.   
 <IMG alt=overall src="pics/portableModel.png"><BR><br>
-This is a wired connection model used for one of our laptop PCs, because we have troubles with the Bluetooth interface of that PC. It's equipped with both of Bluetooth and USB interfaces.  The USB interface is connected to the UART TX line of the MCU using a FT234XD interface module.  
+This is a wired connection model used for one of our laptop PCs. The Bluetooth interface of that PC is troublesome, so the USB is rather straight forward in that case. It's equipped with both of Bluetooth and USB interfaces. The micro USB connector is connected to the UART TX line of the MCU using a FT234XD module.  
 <IMG alt=overall src="pics/usbModel.png"><BR>
