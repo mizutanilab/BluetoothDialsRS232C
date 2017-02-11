@@ -33,5 +33,5 @@ Rubber bumpons on the device back are essential. Without these bumpons, the devi
 ## Variations
 A portable model with a battery charging circuit. Its size is about 95 x 65 x 35 mm. Wood knobs are for the better usability. We purchased them as guitar knobs.   
 <IMG alt=overall src="pics/portableModel.png"><BR><br>
-This is a wired connection model used for one of our laptop PCs. The Bluetooth interface of that PC is troublesome, so the USB is rather straight forward in that case. It's equipped with both of Bluetooth and USB interfaces. The micro USB connector is connected to the UART TX line of the MCU using a FT234XD module.  
+This is a dual interface model used for one of our laptop PCs. The Bluetooth interface of that PC is troublesome, so the USB is rather straight forward in that case. It's equipped with both of Bluetooth and USB interfaces. The micro USB connector is wired to a FT234XD chip and then to the UART TX line of the MCU.  
 <IMG alt=overall src="pics/usbModel.png"><BR>
