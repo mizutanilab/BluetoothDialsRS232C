@@ -11,7 +11,7 @@ The Bluetooth interface of this device is RN42 (Microchip / Roving Networks). Fo
 ## Firmware
 The device firmware runs in two modes: serial mode and keyboard mode. The serial mode is the default boot. In this mode, dial/button operations are sent to a virtual COM port associated with this device. If the device is paired with your PC, the device port is scanned and listed automatically in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
 
-The keyboard mode is enabled by pressing the upper button while setting batteries or connecting power cable. This mode can only be used if the device is connected with the Bluetooth interface. In the keyboard mode, this device is recognized as a Bluetooth keyboard. Dial/button operations are treated as if they are keyboard inputs.  
+The keyboard mode is enabled by pressing the upper button while setting batteries or connecting power cable. This mode can only be used if the device is connected with the Bluetooth interface. In the keyboard mode, the device is recognized as a Bluetooth keyboard. Dial/button operations are treated as if they are keyboard inputs.  
 
 In the serial mode, Bluetooth sniffing with a 500 ms interval is enabled (RN42 command: SW,0320) to reduce the battery consumption, but a certain laptop seems not compatible with the sniffing. In the keyboard mode, sniffing is disabled because the device reaction becomes frustrating.  
 
