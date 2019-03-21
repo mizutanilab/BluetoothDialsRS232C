@@ -36,6 +36,10 @@ Please find a code example in files <a href="https://github.com/mizutanilab/RecV
 Rubber bumpons on the device back are essential. Without these bumpons, the device itself rotates when you rotate knobs.  
 <IMG alt=overall src="pics/rubberBumpons.png"><BR>
 
+We use connector cables to wire rotary encoders. This is because the encoders frequently go wrong if we use the device on a daily basis. 
+ There would be several workarouns but this is easiest and cheapest.  
+<IMG alt=inside src="pics/inside.png"><BR>
+
 ## Variations
 A portable model with a battery charging circuit. Its size is about 95 x 65 x 35 mm. It's equipped with wood knobs for the better usability. We purchased them as guitar knobs.   
 <IMG alt=overall src="pics/portableModel.png"><BR><br>
