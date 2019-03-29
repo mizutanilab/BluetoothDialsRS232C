@@ -20,7 +20,7 @@ The original firmware had two modes: serial mode and keyboard mode, though the p
 There's nothing special. The MCU (PIC16F1828) receives signals from rotary encoders (PEC11R, Bourns) and push buttons (B3F, Omron), and sends those information through the UART TX line to the Bluetooth module (RN42) and to the RS232C interface. The device operates with four AA batteries, or with DC current draw from the RS232C DTR line. The D-sub port can be connected to an RS232C interface of your PC with a stragiht cable, or to a USB port using an RS232C-USB adaptor. <BR>
 
 ## PCB gerbers
-<IMG alt=gerber src="pics/boardR6_190226.png"><BR>
+<IMG alt=gerber src="pics/boardR6_190329.png"><BR>
 Gerber files are available in the 'gerber' folder. <BR>
 
 ## Host side coding
