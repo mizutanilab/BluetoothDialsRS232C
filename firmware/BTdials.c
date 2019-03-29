@@ -39,9 +39,9 @@ __CONFIG(WRT_OFF & PLLEN_OFF & STVREN_OFF & BORV_19 & LVP_OFF);
 //Bluetooth connection 1:connected 0:none
 #define BLUETOOTH_CONNECTED PORTAbits.RA2
 #define RS232C_CONNECTED PORTCbits.RC5
-#define POWER_SW PUSH_SW1
 #define PUSH_SW2 PORTAbits.RA0
 #define PUSH_SW1 PORTAbits.RA1
+#define POWER_SW PUSH_SW2
 #define MODE_BLUETOOTH 1
 #define MODE_RS232C 2
 
@@ -148,12 +148,12 @@ void enterSleepMode() {
 	RCSTAbits.SPEN = 0;//turn off UART
 	TXSTAbits.TXEN = 0;
 //turn off pull ups to reduce sleep current (220 uA ==> 30-50 uA)
-	WPUA = 0x02;//keep the POWER_SW pull up
+	WPUA = 0x01;//keep the POWER_SW pull up
 	WPUB = 0x00;
 	WPUC = 0b00;//RC7-0: pull up
 	//190315 PORTCbits.RC5 = 0;//turn off LED
 	TRISA = 0b11111111;
-	ANSELA = 0b11111001;//turn off RA4,3,0 digital inputs
+	ANSELA = 0b11111010;//turn off RA4,3,1 digital inputs
 	ANSELB = 0xff;//port B
 	ANSELC = 0b11011111;//port C
 }
@@ -238,19 +238,6 @@ void main(void){
 
 	while (1) {
 		uiTick++;
-
-		//LED indicates the BTH connection
-		//uc0 = (uiTick >> 8);
-		//if (ucMode & MODE_USB) PORTCbits.RC5 = 1;
-		//else {
-		//	if (BLUETOOTH_CONNECTED) {
-		//		if ((uc0 & 0xe) == 0x2) PORTCbits.RC5 = 1;
-		//		else PORTCbits.RC5 = 0;
-		//	} else {
-		//		if ((uc0 & 0xa) == 0x2) PORTCbits.RC5 = 1;
-		//		else PORTCbits.RC5 = 0;
-		//	}
-		//}
 
 		uc0 = (uiTick & 0x03);
 		ucEnc[0][uc0] = ENC0CLK;
