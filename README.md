@@ -9,7 +9,7 @@ Six knobs are used for changing parameters. Two buttons are used for toggling so
 The Bluetooth interface of this device is RN42 (Roving Networks / Microchip). For the host-side interface, we use dongles MM-BTUD43 (Sanwa Supply) for Windows PCs. This dongle seems to use a CSR chip. Built-in Bluetooth interfaces of most of our laptop PCs also work well with the device.  
 
 ## Firmware
-Dial/button operations are sent to a virtual COM port associated with this device. If the device is paired with your PC, the device port is listed in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
+The firmware sends dial/button operations to a virtual COM port associated with this device. If the device is paired with your PC, the device port is listed in the Dialbox dialog of RecView and MCTrace. The COM port number can also be found from: Bluetooth icon in the lower right -> show devices -> other options -> COM port tab.  
 
 In the default boot, Bluetooth sniffing with a 500 ms interval is enabled (RN42 command: SW,0320) to reduce the battery consumption, but a certain laptop seems not compatible with sniffing. The sniffing is disabled by pressing the lower button while setting batteries.  
 
