@@ -22,7 +22,7 @@ The original firmware had two modes: serial mode and keyboard mode, though the p
 There's nothing special. The MCU (PIC16F1828) receives signals from rotary encoders (PEC11R, Bourns) and push buttons (B3F, Omron), and sends those information through the UART TX line to the Bluetooth module (RN42) and to the RS232C interface. The device operates with four AA batteries, or with DC current draw from the RS232C DTR line. The D-sub port can be connected to an RS232C interface of your PC with a stragiht cable, or to a USB port using an RS232C-USB adaptor. <BR>
 
 ## PCB gerbers
-Gerber files are available from the <a href="https://github.com/mizutanilab/BluetoothDialsRS232C/gerber">gerber</a> folder.<BR><BR>
+Gerber files are available from the <a href="https://github.com/mizutanilab/BluetoothDialsRS232C/tree/master/gerber">gerber</a> folder.<BR><BR>
 <IMG alt=gerber src="pics/boardR6_190329.png"><BR>
 A few blank circuit boards are available (only for researchers of non-profit institutions). There is a mistake in the pad connection of RN42 in this version of PCB, so it can be used only for RS232C and we do not recommend to use it with RN42 Bluetooth unit. The mistake is corrected in the gerber files above. A newer model with USB interface is <a href="https://github.com/mizutanilab/BluetoothDials">here</a>.
 
