@@ -1,4 +1,4 @@
-# Bluetooth Dials with RS232C interaface
+# Bluetooth Dials with RS232C interface
 
 A newer version with USB interface is <a href="https://github.com/mizutanilab/BluetoothDials">here</a>. 
 
